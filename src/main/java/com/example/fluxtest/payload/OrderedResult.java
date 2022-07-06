@@ -1,4 +1,4 @@
-package com.example.fluxtest.model;
+package com.example.fluxtest.payload;
 
 public class OrderedResult implements CalculationResult{
     private Integer iterNum;
