@@ -1,13 +1,13 @@
 package com.example.fluxtest.model;
 
 public class FuncResult {
-    private Integer iterNum;
-    private Long result;
-    private Long time;
+    private final Integer iterNum;
+    private final String result;
+    private final Long time;
 
     private Integer funcNum;
 
-    public FuncResult(Integer iterNum, Long result, Long time) {
+    public FuncResult(Integer iterNum, String result, Long time) {
         this.iterNum = iterNum;
         this.result = result;
         this.time = time;
@@ -21,7 +21,7 @@ public class FuncResult {
         return funcNum;
     }
 
-    public Long getResult() {
+    public String getResult() {
         return result;
     }
 

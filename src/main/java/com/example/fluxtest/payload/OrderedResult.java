@@ -1,17 +1,17 @@
 package com.example.fluxtest.payload;
 
 public class OrderedResult implements CalculationResult{
-    private Integer iterNum;
-    private Integer resultFirst;
-    private Integer timeFirst;
-    private Integer doneFirst;
-    private Integer resultSecond;
-    private Integer timeSecond;
-    private Integer doneSecond;
+    private final Integer iterNum;
+    private final String resultFirst;
+    private final Integer timeFirst;
+    private final Integer doneFirst;
+    private final String resultSecond;
+    private final Integer timeSecond;
+    private final Integer doneSecond;
 
     public OrderedResult(Integer iterNum,
-                         Integer resultFirst, Integer timeFirst, Integer doneFirst,
-                         Integer resultSecond, Integer timeSecond, Integer doneSecond) {
+                         String resultFirst, Integer timeFirst, Integer doneFirst,
+                         String resultSecond, Integer timeSecond, Integer doneSecond) {
         this.iterNum = iterNum;
         this.resultFirst = resultFirst;
         this.timeFirst = timeFirst;
@@ -25,7 +25,7 @@ public class OrderedResult implements CalculationResult{
         return iterNum;
     }
 
-    public Integer getResultFirst() {
+    public String getResultFirst() {
         return resultFirst;
     }
 
@@ -37,7 +37,7 @@ public class OrderedResult implements CalculationResult{
         return doneFirst;
     }
 
-    public Integer getResultSecond() {
+    public String getResultSecond() {
         return resultSecond;
     }
 

@@ -1,12 +1,12 @@
 package com.example.fluxtest.payload;
 
 public class UnorderedResult implements CalculationResult {
-    private Integer iterNum;
-    private Integer funcNum;
-    private Integer funcResult;
-    private Integer funcTime;
+    private final Integer iterNum;
+    private final Integer funcNum;
+    private final String funcResult;
+    private final Integer funcTime;
 
-    public UnorderedResult(Integer iterNum, Integer funcNum, Integer funcResult, Integer funcTime) {
+    public UnorderedResult(Integer iterNum, Integer funcNum, String funcResult, Integer funcTime) {
         this.iterNum = iterNum;
         this.funcNum = funcNum;
         this.funcResult = funcResult;
@@ -21,7 +21,7 @@ public class UnorderedResult implements CalculationResult {
         return funcNum;
     }
 
-    public Integer getFuncResult() {
+    public String getFuncResult() {
         return funcResult;
     }
 
